@@ -57,7 +57,7 @@ export default function Home() {
                 subtitle=""
                 description="Personal portfolio website made using Typescript, React, and Tailwind CSS."
                 tags={['Typescript', 'React', 'Tailwind CSS']}
-                link="https://personal-website-two-psi-10.vercel.app/"
+                link="https://lemonpollock.com/"
               />
               <ProjectCard
                 imageSrc="projectcard-4-image.png"
