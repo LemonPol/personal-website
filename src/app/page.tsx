@@ -7,12 +7,10 @@ export default function Home() {
   const [animateContact, setAnimateContact] = useState(false);
 
   const handleClickContact = () => {
-    setAnimateContact(true); // Trigger animation
+    setAnimateContact(true);
     setTimeout(() => {
-      setAnimateContact(false); // Reset animation after a delay (adjust timing as needed)
-    }, 800); // Animation duration + some buffer
-
-    // You can add other logic here for handling the actual contact action
+      setAnimateContact(false);
+    }, 800); 
   };
 
   useEffect(() => {
@@ -21,7 +19,7 @@ export default function Home() {
     if (carouselContainer) {
       setTimeout(() => {
         carouselContainer.scrollTo({
-          left: 300,
+          left: 1000,
           behavior: 'smooth'
         });
 
@@ -59,38 +57,34 @@ export default function Home() {
                 subtitle=""
                 description="Personal portfolio website made using Typescript, React, and Tailwind CSS."
                 tags={['Typescript', 'React', 'Tailwind CSS']}
+                link="https://personal-website-two-psi-10.vercel.app/"
+              />
+              <ProjectCard
+                imageSrc="projectcard-4-image.png"
+                imageAlt=""
+                title="Multi-Base Calculator"
+                subtitle=""
+                description="Calculator app which supports instant converison between decimal, hexadecimal, and binary"
+                tags={['HTML', 'CSS', 'Javascript']}
+                link="https://multi-base-calculator.vercel.app/"
               />
               <ProjectCard
                 imageSrc="projectcard-2-image.png"
-                imageAlt="Shoes"
+                imageAlt=""
                 title="Java IoT Project"
                 subtitle=""
                 description="Developed a scalable IoT server architecture optimized for reliability and efficiency, featuring robust event and request handling, and AWS Lambda integration for enhanced performance."
                 tags={['Java', 'IoT', 'AWS Lambda']}
+                link=""
               />
               <ProjectCard
                 imageSrc="projectcard-3-image.png"
-                imageAlt="Shoes"
+                imageAlt=""
                 title="Simple RISC CPU Design"
                 subtitle=""
                 description="Designed and implemented a CPU using SystemVerilog, incorporating pipelining to enhance processing speed. The CPU was tested in ModelSim and deployed on a DE1-SoC board."
                 tags={['SystemVerilog', 'ModelSim', 'Quartus']}
-              />
-              <ProjectCard
-                imageSrc=""
-                imageAlt=""
-                title="Sample Project"
-                subtitle=""
-                description="TBD."
-                tags={[]}
-              />
-              <ProjectCard
-                imageSrc=""
-                imageAlt=""
-                title="Sample Project"
-                subtitle=""
-                description="TBD."
-                tags={[]}
+                link=""
               />
             </div>
           </div>
