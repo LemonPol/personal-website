@@ -3,8 +3,8 @@ import ProjectCard from './components/ProjectCard';
 
 export default function Home() {
   return (
-    <main className="h-screen overflow-y-scroll snap-y snap-mandatory">
-      <div id="section-1" className="flex flex-col items-center justify-center text-center h-screen w-full snap-start">
+    <main className="h-screen">
+      <div id="section-1" className="flex flex-col items-center justify-center text-center h-screen w-full">
         <h1 className="text-3xl font-bold mb-4">LEMON POLLOCK</h1>
         <div className="flex justify-center">
           <a href="#about" className="text-orange-400 hover:underline mx-4">About</a>
@@ -12,11 +12,11 @@ export default function Home() {
           <a href="#" className="text-orange-400 hover:underline mx-4">CV</a>
         </div>
       </div>
-      <div id="about" className="flex flex-col items-center justify-center text-center h-screen w-full snap-start">
+      <div id="about" className="flex flex-col items-center justify-center text-center h-screen w-full">
         <h1 className="text-3xl font-bold mb-4">ABOUT</h1>
         <p className="w-1/2">words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words</p>
       </div>
-      <div id="projects" className="flex flex-col items-center justify-center text-center h-screen w-full snap-start">
+      <div id="projects" className="flex flex-col items-center justify-center text-center h-screen w-full">
         <h1 className="text-3xl font-bold mb-4">PROJECTS</h1>
         <div className="flex justify-center items-center w-full">
           <div className="carousel carousel-center rounded-box gap-6 bg-orange-400 p-10 rounded-3xl w-2/3">
