@@ -36,8 +36,8 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="h-screen">
-      <div className="h-screen flex flex-col items-center justify-center text-center w-full">
+    <main className="min-h-screen flex flex-col items-center justify-center overflow-y-auto">
+      <div className="py-12 min-h-full flex flex-col items-center justify-center text-center w-full overflow-y-auto">
         <div id="title" className="flex flex-col items-center justify-center text-center w-full mb-8">
           <h1 className="text-4xl font-bold mb-1">LEMON POLLOCK</h1>
           <h1 className="text-1xl font-bold mb-4">COMPUTER ENGINEERING STUDENT</h1>
@@ -95,7 +95,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="contacts" className={`flex flex-col items-center justify-center text-center w-1/3 p-5 rounded-box ${animateContact ? 'shake-horizontal' : ''}`}>
+        <div id="contacts" className={`flex flex-col items-center justify-center text-center w-1/3 p-5 pb-12 rounded-box ${animateContact ? 'shake-horizontal' : ''}`}>
           <h1 className="text-3xl font-bold mb-4">CONTACT</h1>
           <div className="flex items-center justify-center text-center w-full">
           <img src="email.png" className="size-7 mr-2"></img>
