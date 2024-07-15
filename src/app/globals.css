@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
-#section-1, #projects, #about {
+body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
 }
@@ -20,4 +20,17 @@ html {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@keyframes flash-orange {
+  0%, 100% {
+    background-color: white;
+  }
+  50% {
+    background-color: rgb(251, 146, 60);
+  }
+}
+
+.shake-horizontal {
+  animation: flash-orange 0.8s cubic-bezier(0.5, 0.03, 0.5, 1) both;
 }
