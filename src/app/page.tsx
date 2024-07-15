@@ -3,46 +3,62 @@ import ProjectCard from './components/ProjectCard';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-0 m-0">
-      <div id = "section-1" className="flex flex-col items-center justify-center text-center h-screen w-full">
+    <main className="h-screen overflow-y-scroll snap-y snap-mandatory">
+      <div id="section-1" className="flex flex-col items-center justify-center text-center h-screen w-full snap-start">
         <h1 className="text-3xl font-bold mb-4">LEMON POLLOCK</h1>
         <div className="flex justify-center">
-          <a href="#section-2" className="text-blue-600 hover:underline mx-4">About</a>
-          <a href="#section-3" className="text-blue-600 hover:underline mx-4">Projects</a>
-          <a href="#" className="text-blue-600 hover:underline mx-4">CV</a>
+          <a href="#about" className="text-orange-400 hover:underline mx-4">About</a>
+          <a href="#projects" className="text-orange-400 hover:underline mx-4">Projects</a>
+          <a href="#" className="text-orange-400 hover:underline mx-4">CV</a>
         </div>
       </div>
-      <div id = "section-2" className="flex flex-col items-center justify-center text-center h-screen w-full">
+      <div id="about" className="flex flex-col items-center justify-center text-center h-screen w-full snap-start">
         <h1 className="text-3xl font-bold mb-4">ABOUT</h1>
         <p className="w-1/2">words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words words</p>
       </div>
-      <div id = "section-3" className="flex flex-col items-center justify-center text-center h-screen w-full">
+      <div id="projects" className="flex flex-col items-center justify-center text-center h-screen w-full snap-start">
         <h1 className="text-3xl font-bold mb-4">PROJECTS</h1>
         <div className="flex justify-center items-center w-full">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="carousel carousel-center rounded-box gap-6 bg-orange-400 p-10 rounded-3xl w-2/3">
             <ProjectCard
-              imageSrc="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-              imageAlt="Shoes"
-              title="Shoes!"
+              imageSrc="projectcard-1-image.png"
+              imageAlt="Website screenshot"
+              title="This Website!"
               subtitle=""
-              description="If a dog chews shoes whose shoes does he choose?"
+              description="Personal portfolio website made using Typescript, React, and Tailwind CSS."
               tags={['Typescript', 'React', 'Tailwind CSS']}
             />
             <ProjectCard
-              imageSrc="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+              imageSrc="projectcard-2-image.png"
               imageAlt="Shoes"
-              title="Shoes!"
+              title="Java IoT Project"
               subtitle=""
-              description="If a dog chews shoes whose shoes does he choose?"
-              tags={['Fashion', 'Products']}
+              description="Developed a scalable IoT server architecture optimized for reliability and efficiency, featuring robust event and request handling, and AWS Lambda integration for enhanced performance."
+              tags={['Java', 'IoT', 'AWS Lambda']}
             />
             <ProjectCard
-              imageSrc="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+              imageSrc="projectcard-3-image.png"
               imageAlt="Shoes"
-              title="Shoes!"
+              title="Simple RISC CPU Design"
               subtitle=""
-              description="If a dog chews shoes whose shoes does he choose?"
-              tags={['Fashion', 'Products']}
+              description="Designed and implemented a CPU using SystemVerilog, incorporating pipelining to enhance processing speed. The CPU was tested in ModelSim and deployed on a DE1-SoC board."
+              tags={['SystemVerilog', 'ModelSim', 'Quartus']}
+            />
+            <ProjectCard
+              imageSrc="projectcard-3-image.png"
+              imageAlt="Shoes"
+              title="Simple RISC CPU Design"
+              subtitle=""
+              description="Designed and implemented a CPU using SystemVerilog, incorporating pipelining to enhance processing speed. The CPU was tested in ModelSim and deployed on a DE1-SoC board."
+              tags={['SystemVerilog', 'ModelSim', 'Quartus']}
+            />
+            <ProjectCard
+              imageSrc="projectcard-3-image.png"
+              imageAlt="Shoes"
+              title="Simple RISC CPU Design"
+              subtitle=""
+              description="Designed and implemented a CPU using SystemVerilog, incorporating pipelining to enhance processing speed. The CPU was tested in ModelSim and deployed on a DE1-SoC board."
+              tags={['SystemVerilog', 'ModelSim', 'Quartus']}
             />
           </div>
         </div>

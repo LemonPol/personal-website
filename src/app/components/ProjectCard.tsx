@@ -10,7 +10,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, imageAlt, title, subtitle, description, tags }) => (
-  <div className="card card-compact bg-gray-100 w-96 shadow-xl">
+  <div className="card card-compact bg-gray-100 w-96 shadow-xl carousel-item">
     <figure>
       <img src={imageSrc} alt={imageAlt} />
     </figure>
