@@ -89,7 +89,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="contacts" className={`flex flex-col items-center justify-center text-center w-1/3 p-5 pb-12 rounded-box ${animateContact ? 'shake-horizontal' : ''}`}>
+        <div id="contacts" className={`flex flex-col items-center justify-center text-center w-1/3 p-5 pb-12 rounded-box ${animateContact ? 'flash-orange' : ''}`}>
           <h1 className="text-3xl font-bold mb-4">CONTACT</h1>
           <div id="contactContainer" className="flex items-center justify-center text-center w-full">
             <div className="flex items-center justify-center" >
