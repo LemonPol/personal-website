@@ -37,13 +37,13 @@ export default function Home() {
     <main className="min-h-screen flex flex-col items-center justify-center overflow-y-auto">
       <div className="py-12 min-h-full flex flex-col items-center justify-center text-center w-full overflow-y-auto">
         <div id="title" className="flex flex-col items-center justify-center text-center w-full mb-8">
-          <h1 className="text-4xl font-bold mb-1">LEMON POLLOCK</h1>
+          <h1 className="text-5xl font-bold mb-1">LEMON POLLOCK</h1>
           <h1 className="text-1xl font-bold mb-4">COMPUTER ENGINEERING STUDENT</h1>
         </div>
         <div id="about" className="flex flex-col items-center justify-center text-center w-full mb-10">
           <h1 className="text-3xl font-bold mb-4">ABOUT</h1>
-          <p className="w-1/2 mb-4">Hey there! My name is Lemon and I&apos;m a computer engineering student at the University of British Columbia. I&apos;m fascinated by the inner workings of computers, with a particular interest in hardware and low-level programming. While I love diving into the nuts and bolts of systems, I&apos;m also eager to expand my skillset into web development.</p>
-          <p className="w-1/2">I&apos;m committed to continuous learning and growth in both my professional and personal endeavors. If you&apos;re interested in discussing technology, collaboration opportunities, or sharing insights, please don&apos;t hesitate to</p>
+          <p id="body-text-1" className="w-1/2 mb-4">Hey there! My name is Lemon and I&apos;m a computer engineering student at the University of British Columbia. I&apos;m fascinated by the inner workings of computers, with a particular interest in hardware and low-level programming. While I love diving into the nuts and bolts of systems, I&apos;m also eager to expand my skillset into web development.</p>
+          <p id="body-text-2" className="w-1/2">I&apos;m committed to continuous learning and growth in both my professional and personal endeavors. If you&apos;re interested in discussing technology, collaboration opportunities, or sharing insights, please don&apos;t hesitate to</p>
           <a className="text-orange-500 hover:underline mx-4" href="#contacts" onClick={handleClickContact}>contact me.</a>
         </div>
         <div id="projects" className="flex flex-col items-center justify-center text-center w-full mb-10">
@@ -91,11 +91,15 @@ export default function Home() {
         </div>
         <div id="contacts" className={`flex flex-col items-center justify-center text-center w-1/3 p-5 pb-12 rounded-box ${animateContact ? 'shake-horizontal' : ''}`}>
           <h1 className="text-3xl font-bold mb-4">CONTACT</h1>
-          <div className="flex items-center justify-center text-center w-full">
-          <img src="email.png" className="size-7 mr-2"></img>
-            <p>LemonPollock@gmail.com</p>
-            <img src="github-mark.png" className="size-7 mr-2 ml-4"></img>
-            <a href="https://github.com/LemonPol">@LemonPol</a>
+          <div id="contactContainer" className="flex items-center justify-center text-center w-full">
+            <div className="flex items-center justify-center" >
+              <img src="email.png" className="size-7 mr-2"></img>
+              <p>LemonPollock@gmail.com</p>
+            </div>
+            <div className="flex items-center justify-center">
+              <img src="github-mark.png" className="size-7 mr-2 ml-9"></img>
+              <a href="https://github.com/LemonPol">@LemonPol</a>
+            </div>
           </div>
         </div>
       </div>

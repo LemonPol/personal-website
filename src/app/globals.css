@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (max-width: 650px) {
+  body {
+    opacity: 1;
+  }
+  #contactContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  #carousel {
+    width: fit-content;
+    border-radius: 0;
+  }
+  #body-text-1 {
+    width: 90%;
+  }
+  #body-text-2 {
+    width: 90%;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
